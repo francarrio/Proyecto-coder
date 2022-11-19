@@ -1,0 +1,396 @@
+$background-color:#B9FFF8;
+$background-hover: #0096FF;
+$border-color: #3120E0;
+$text-color:#100720;
+
+body{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background: url(../imagenes/foto-fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    height: 80px;
+    background:$background-color;
+    padding: 10px;
+}
+.logo h1{
+    font-family: 'Lobster', cursive;
+    color: #CBA0AE;
+}
+.logo-img{
+    height: 80px;
+}
+.barra-site{
+    background: rgb(36, 80, 161);
+    color: #F7ECDE;
+    padding: 10px;
+    margin: 0px 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s linear;
+    transition-timing-function: ease-in-out;
+}
+.barra-site:hover{
+    background: #100720;
+    padding: 15px;
+    color: #F7ECDE;
+    text-shadow: 0 0 5px #F7ECDE,
+    0 0 10px #F7ECDE,
+    0 0 15px #F7ECDE;
+}   
+.piepagina{
+    background: $background-color;
+    padding: 35px 0px;
+    color: darkorange;
+    font-size: 15px;
+}
+.home-text{
+    width: 40%;
+    background-color: $background-color;
+    opacity: 0.6;
+}
+.home{
+    color: $text-color;
+    font-size: 20px;
+}
+.imagenes-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35%;
+    margin: 5px;
+    box-shadow: $background-color;
+}
+.img-home{
+    margin: 10px 5px;
+    border: 2px solid aqua;
+}
+.div-iconos{
+    display: flex;
+    flex-direction: column;
+}
+.iconos{
+    width: 100px;
+    height: 100px;
+    margin: 46px 0px;
+    position: relative;
+    animation-name: home-icon;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
+/* PAGINA STAFF */
+
+.h2-staff{
+    background-color: $background-color;
+    color: #3120E0;
+    padding: 15px;
+    margin: 0px;
+    clip-path: circle(20% at 50% 50%);
+    text-align: center;
+    transition-property: color clip-path background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+.h2-staff:hover{
+clip-path: circle(200% at 50% 50%);
+background-color: $background-hover;
+color: $text-color;
+}
+.info-staff{
+    font-size: 30px;
+    color: $text-color;
+    background-color: $background-color;
+    padding: 10px;
+    opacity: 0.8;
+    text-align: center;
+}
+.figure{
+    position: relative;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.ph{
+    background-color: #0096FF;
+    padding: 20px;
+    border: 1px solid #100720;
+    border-radius: 0.7em;
+    transition: all 500ms ease-in-out;
+}
+.ph:hover{
+background-color: #0096FF;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.6);
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.capa h3{
+    color: #F7ECDE;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-in-out;
+    margin-top: 25px;
+}
+.capa p{
+    color: #F7ECDE;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+/* PAGINA TOURS */
+.h2-tours{
+    background-color: $background-color;
+    color: #3120E0;
+    padding: 15px;
+    margin: 0%;
+    text-align: center;
+    transition-property: color clip-path background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+.h2-tours:hover{
+    background-color: $background-hover;
+    color: $text-color;
+    }
+.tours-capital{
+    margin: 40px 50px;
+}
+.tours-cafayate{
+    margin: 40px 50px;
+}
+.h3sub1{
+    align-self: start;
+    background-color: $background-color;
+    padding: 10px 40px;
+    margin: 0px 40px;
+    border: 1px solid $border-color;
+    text-align: center;
+}
+.h3sub2{
+    align-self: start;
+    background-color: $background-color;
+    padding: 10px 40px;
+    margin: 0px 40px;
+    border: 1px solid $border-color;
+    text-align: center;
+}
+.text-tours{
+    color: $text-color;
+    width: 55%;
+    background-color: $background-color;
+    opacity: 0.9;
+    border: 2px solid $border-color;
+    text-align: center;
+}
+.img-tours{
+    clip-path: circle(50% at 50% 50%)
+}
+/* PAGINA GALERIA */
+.h2-galeria{
+    background-color: $background-color;
+    color: #3120E0;
+    padding: 15px;
+    margin: 0%;
+    clip-path: circle(20% at 50% 50%);
+    text-align: center;
+    transition-property: color clip-path background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+.h2-galeria:hover{
+    clip-path: circle(200% at 50% 50%);
+    background-color: $background-hover;
+    color: $text-color;
+    }
+.Galeria-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row:auto;
+    justify-content:space-evenly;
+    width: 86%;
+    margin: 0% auto 10px auto;
+    background-color: $background-color;
+    padding: 20px;
+}
+
+.foto-g{
+    // border: 4px solid $border-color;
+    border: 2px solid aqua;
+    border-radius: 6px;
+    box-shadow: 0px 15px 10px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    position: relative;
+}
+.c1{
+    grid-column: 1/4;
+}
+.c4{
+    grid-area:2/3/4/4 ;
+}
+/* PAGINA CONTACTO */
+h2  {
+    color: #3120E0;
+    font-family: sans-serif;
+}
+
+label   {
+    color: #3120E0;
+    font-family: sans-serif;
+}
+
+.contacto   {
+    display: inline;
+}
+
+/* ubicacion de formulario */
+
+.ubicacion-formulario {
+    background-color: $background-color;
+    opacity: 0.7;
+    width: 300px;
+    margin: 0% 0% 0% 39%;
+
+    border: solid 0.1em ;
+    border-radius: 0.7em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+}
+.titulo-contactos { 
+    background-color:$background-color;
+    opacity: 0.7;
+    width: 500px;
+    margin: 0% 0% 0% 31%;
+
+    border: solid 0.1em #3120E0;
+    border-radius: 0.7em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* animaciones */
+@keyframes home-icon {
+    0% {top: 0px}
+    25% {top: -50px}
+    50% {top: 0px}
+    75% {top: -50px}
+    90% {top:-20px}
+    95% {top: -5px}
+    100% {top: opx}
+}
+/* responsive */
+@media (max-width:750px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+
+    }
+    .conteiner{
+        flex-direction: column;
+    }
+    .home-text{
+        width: auto;
+        height: 25%;
+        margin: 25px 0px 0px 0px;
+    }
+    .imagenes-home{
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+    .img1{
+        display: none;
+    }
+    .img3{
+        display: none;
+    }
+    .div-iconos{
+        flex-direction: row ;
+    }
+    .staff-integrantes{
+        flex-direction: column-reverse;
+    }
+    .h2-staff{
+        margin: 25px 0px 0px 0px;
+    }
+    .h2-tours{
+        margin: 25px 0px 0px 0px;
+    }
+    .tours-capital{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tours-cafayate{
+        flex-direction: column;
+        align-items: center;
+    }
+    .h3sub1{
+        order: -1;
+        align-self: center;
+    }
+    .h3sub2{
+        order: -1;
+        align-self: center;
+    }
+    .h2-galeria{
+        margin: 25px 0px 0px 0px;
+    }
+    .Galeria-grid{
+        grid-template-columns: auto;
+    }
+    .c1{
+        display: none;
+    }
+    .c2{
+        display: none;
+    }
+    .c4{
+        display: none;
+    }
+    .c5{
+        display: none;
+    }
+    .c7{
+        display: none;
+    }
+    .c9{
+        display: none;
+    }
+    .ubicacion-formulario{
+       margin: 0% 0% 0% 8%;
+    }
+    .titulo-contactos{
+        margin: 0px;
+        width: 360px;
+    }
+
+}
